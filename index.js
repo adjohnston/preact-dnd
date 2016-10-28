@@ -2,7 +2,7 @@ import React, { createClass } from 'react'
 import { render } from 'react-dom'
 import { DragDropContext } from 'react-dnd'
 import HTML5Backend from 'react-dnd-html5-backend'
-import DragArea from 'js/drag-area'
+import DragArea from './js/drag-area'
 
 const App = createClass({
   render() {

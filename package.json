@@ -1,37 +1,34 @@
 {
   "name": "preact-dnd",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Install `npm install`",
   "main": "index.js",
+  "dependencies": {
+    "preact": "^6.4.0",
+    "preact-compat": "^3.9.0",
+    "react-dnd": "^2.1.4",
+    "react-dnd-html5-backend": "^2.1.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.0",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  },
   "scripts": {
-    "start": "jspm-server --port=3000",
-    "postinstall": "jspm install"
+    "prestart": "node_modules/.bin/webpack",
+    "start": "node_modules/.bin/webpack-dev-server"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adjohnston/preact-dnd.git"
   },
-  "author": "Adam Johnston <adam@getkahoot.com>",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/adjohnston/preact-dnd/issues"
   },
-  "homepage": "https://github.com/adjohnston/preact-dnd#readme",
-  "dependencies": {
-    "jspm": "^0.16.47",
-    "jspm-server": "^1.0.1"
-  },
-  "jspm": {
-    "dependencies": {
-      "react": "npm:preact-compat@^3.9.0",
-      "react-dnd": "npm:react-dnd@^2.1.4",
-      "react-dnd-html5-backend": "npm:react-dnd-html5-backend@^2.1.2",
-      "react-dom": "npm:preact-compat@^3.9.0"
-    },
-    "devDependencies": {
-      "babel": "npm:babel-core@^5.8.24",
-      "babel-runtime": "npm:babel-runtime@^5.8.24",
-      "core-js": "npm:core-js@^1.1.4"
-    }
-  }
+  "homepage": "https://github.com/adjohnston/preact-dnd#readme"
 }
