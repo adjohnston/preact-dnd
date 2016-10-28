@@ -9,8 +9,11 @@ const cardSource = {
   }
 }
 
-const collect = connect => {
-  connectDragSource: connect.dragSource()
+const collect = (connect, monitor) => {
+  return {
+    connectDragSource: connect.dragSource(),
+    isDragging: monitor.isDragging()
+  }
 }
 
 const Card = createClass({

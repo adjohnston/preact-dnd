@@ -9,8 +9,10 @@ const App = createClass({
     return (
       <div>
         <p>
-          The component below will not be rendered correctly. Instead it will render as: <pre><code>&lt;undefined>&lt;/undefined></code></pre>
+          The component below will not be rendered correctly. Instead it will render as:
         </p>
+
+        <pre><code>&lt;undefined>&lt;/undefined></code></pre>
 
         <DragArea />
       </div>
